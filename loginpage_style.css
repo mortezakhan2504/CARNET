@@ -1,0 +1,159 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #1B1B1B;
+    direction: rtl;
+}
+form h1{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+.container {
+    background: #222222;
+    border-radius: 30px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    width: 350px;
+    height: 550px;
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    padding-bottom: 100px;
+}
+
+.form-wrapper {
+    position: relative;
+}
+
+.form {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form.active {
+    display: flex;
+}
+
+input {
+    background: #222222;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 2px solid #ffb74b8d;
+    transition: border-bottom 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px solid #ff9900;
+}
+
+button {
+    cursor: pointer;
+    margin-top: 20px;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+	color: white;
+    font-size: 16px;
+	padding: 12px 60px;
+	border-radius: 30px;
+	background-color: #FFB84B;
+	text-align: center;
+	position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease-in-out;
+	z-index: 0;
+}
+.topform{
+    display: flex;
+    align-items: center;
+    margin-top: 38px; 
+    margin-bottom: 50px;
+}
+.siform{
+    margin-bottom: 7px !important;
+}
+.topform p{
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    margin-right: 5px;
+}
+.titsf{
+    margin-bottom: 50px;
+}
+.topform span{
+    color: #FFB84B;
+    font-weight: bold;
+    font-size: 24px;
+
+}
+button::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background-color: #ff9900;
+	transition: left 0.5s ease-in-out;
+	z-index: -1;
+}
+button:hover::before {
+	left: 0;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:focus {
+    outline: none;
+}
+
+.message {
+    margin-top: 20px;
+    color: white;
+}
+
+.message a {
+    color: #FFB84B;
+    text-decoration: none;
+}
+
+.message a:hover {
+    text-decoration: underline;
+}
+
+#passwordStrength, #newPasswordStrength {
+    width: 100%;
+    height: 5px;
+    margin-top: 10px;
+    background-color: #ddd;
+    position: relative;
+}
+
+.strength-bar {
+    height: 100%;
+    transition: width 0.3s;
+}
+
+small {
+    display: block;
+    margin-top: 5px;
+    text-align: right;
+    color: #999;
+    font-size: 12px;
+}
+input::placeholder {
+    color: #D8D8D8 !important;
+}

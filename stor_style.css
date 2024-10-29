@@ -1,0 +1,451 @@
+/* 
+=========================================   
+=========================================     
+همه استایل های صفحه ی اصلی هم لینک شدن چون از اون استایل ها هم استفاده کردم 
+دیگه نخواستم دوباره بنویسیمشون
+*/
+img{
+    object-fit: cover !important; /* تصویر را متناسب با ابعاد ظرف برش می‌دهد */
+    object-position: center !important; /* مرکز تصویر را نمایش می‌دهد */
+}
+/* 
+=========================================   
+=========================================     
+استایل های هدر
+*/
+header{
+    background-color: #1B1B1B;
+    background-image: none;
+    height: auto;
+}
+/* 
+=========================================   
+=========================================     
+استایل های مین
+*/
+main{
+    z-index: 0;
+}
+/* 
+=========================================   
+=========================================     
+بخش نمایش گالری های رندوم
+*/
+.rand_stor{
+    display: flex;
+    align-items: center;
+    margin-top: 200px;
+    z-index: 0;
+}
+.stor_slider{
+    display: flex;
+    align-items: center;
+}
+.stor_slid{
+    margin: 15px;
+    position: relative;
+}
+.imag_stor_box img{
+    width: 400px;
+    height: 235px;
+    border-radius: 20px;
+    z-index: 1;
+}
+.info_stor_box{
+    background-color: #222222;
+    border-radius: 14px;
+    width: 400px;
+    right: 20px;
+    margin-top: -35px;
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+.title_info_stor h1{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 14px;
+}
+.mini_info_stor p{
+    font-size: 10px;
+	color: #AFAFAF;
+	margin-left: 7px;
+    margin: 0px 4px 14px 4px;
+    width: 100%;
+}
+.disc_info_stor{
+    display: flex;
+    margin-right: 10px;
+    width: 130%;
+}
+.btn_info_box{
+    margin-left: 14px;
+}
+.activ_info_stor_box img{
+    width: 440px;
+
+}
+.activ_info_stor_box {
+
+    .info_stor_box{
+        display: flex;
+    }
+}
+.btnscorol_r svg{
+    cursor: pointer;
+    color: #FFB84B;
+}
+.btnscorol_l svg{
+    cursor: pointer;
+    color: #FFB84B;
+}
+.mini_info_stor{
+    display: flex;
+    align-items: center;
+}
+.mini_info_stor svg {
+    color: #FFB84B;
+    margin-bottom: 14px;
+}
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++ */
+
+.btn_box{
+    margin-top: 70px;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++ */
+/* بخش فیلتر ها */
+.filter_ha{
+    width: 80%;
+    background-color: #AFAFAF;
+    margin: auto;
+    margin-top: 50px;
+    height: 70px;
+    text-align: center;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++ */
+/* مرتب سازی بر اساسه*/
+.order_by_box{
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    align-items: baseline;
+}
+.title_order_by p{
+    color: white;
+    font-size: 16px;
+}
+.order_by p{
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 40px;
+	position: relative;
+}
+.activ_order_by p{
+    color: #FFB84B;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #cdcdcd6f;
+}
+.order_by p:hover{
+    color: #FFB84B;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #cdcdcd6f;
+    transition-duration: 500ms;
+}
+/* ++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++ */
+/* بخش نمایش کارت ماشین ها */
+
+.show_cars{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.car_cart img{
+    width: 350px;
+    border-radius: 20px;
+    height: 320px;
+    z-index: 1;
+}
+.car_cart{
+    margin: 35px;
+    margin-bottom: 70px;
+}
+.dicp_cart_info{
+    display: flex;
+    flex-direction: column;
+}
+.info_cart_car{
+    width: 290px;
+    margin: auto; 
+    display: flex;
+    border-radius: 14px;
+    margin-top: -50px;
+    z-index: 100;
+    position: absolute;
+    background-color:#222222 ;
+    padding: 10px 20px 0px 20px;
+    flex-direction: column;
+    margin-right: 9px;
+    cursor: pointer;
+}
+.title_cart h1 {
+    font-size: 14px ;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px;
+    
+}
+.item_info_cart p{
+    color:#AFAFAF ;
+    font-size: 10px;
+    margin: 5px;
+}
+.info_bottom_cart p{
+    color: white;
+    font-size: 12px;
+    text-align: justify;
+    line-height: 15px;
+    display: none;
+}
+.info_mid_cart{
+    display: flex;
+}
+.item_info_cart{
+    display: flex;
+    align-items: center;
+}
+.item_info_cart svg{
+    color: #FFB84B;
+}
+.info_top_cart{
+    margin-bottom: 5px;
+}
+.info_mid_cart{
+    margin-bottom: 10px;
+    width: 115%;
+}
+.disp_felex{
+    display: flex;
+    align-items: center;
+}
+.btn_cart_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.fee_cart{
+    display: flex;
+}
+.fee_cart p{
+    color: #AFAFAF;
+    font-size: 12px;
+    margin-left: 7px;
+    align-items: center;
+}
+.fee_cart span{
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+.jabejayi{
+    margin-top: -65px;
+    margin-left: 35px;
+}
+.jabejayi a{
+    width: 100%;
+    font-size: 12px;
+    height: 15px;
+}
+.info_cart_car:hover{
+    .info_bottom_cart p{
+        display: block;
+    }
+    padding-bottom: 20px;
+    margin-top: -120px;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+    
+}
+/* ++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++ */
+/* بخش شمارنده صفحه */
+.number_page{
+    display: flex;
+    align-items: center;
+}
+.pages{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.nexst_page p {
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+.befor_page p{
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 11px;
+}
+.pages p{
+    color: white;
+    font-size: 14px;
+    border:  2px solid white;
+    border-radius: 100%;
+    padding: 10px 13px;
+    margin-left: 4px;
+    cursor: pointer;
+}
+.activ_page_number {
+    background-color: #FFB84B !important;
+    border: 2px solid #FFB84B !important;
+}
+/* ================================================ */
+/* بخش ریسپانسیو */
+@media only screen and (max-width: 1400px){
+    .imag_stor_box img{
+        width: 350px;
+        height: 205px;
+    }
+    .info_stor_box{
+        width: 320px;
+        align-items: self-start;
+    }
+    .btn_info_box a {
+        margin-top: -10px;
+    }
+    .btn_info_box {
+        margin-right: 15px;
+        margin-top: -50px;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .imag_stor_box img{
+        width: 300px;
+        height: 176px;
+    }
+    .info_stor_box{
+        right: -10px;
+        height: 91px;
+    }
+    .btn_info_box {
+        margin-right: 15px;
+        margin-top: -50px;
+    }
+}
+@media only screen and (max-width: 1050px){
+    .rand_stor{
+        flex-direction: column;
+    }
+    .stor_slider{
+        flex-direction: column;
+    }
+    .btnscorol_r svg{
+        transform: rotate(-90deg);
+    }
+    .btnscorol_l svg{
+        transform: rotate(-90deg);
+    }
+    .activ_info_stor_box img{
+        width: 350px !important;
+        height: 205px !important;
+    }
+    .info_stor_box{
+        right: 0px;
+        width: 350px;
+        background-color: #222222bb;
+        margin-top: -100px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 7px;
+        display: none !important;
+    }
+    .btn_info_box {
+        margin-right: 15px;
+        margin-top: -50px;
+    }
+    .activ_info_stor_box:hover{
+        .info_stor_box{
+            display: flex !important;
+            text-decoration: 300ms;
+        }
+    }
+    .order_by_box{
+        /* width: 100%*/
+        justify-content: center;
+        margin-top:px ;
+    }
+    .order_by_box p {
+        text-align: center;
+        margin: 20px;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 740px){
+    .order_by_box p{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 610px){
+    .order_by_box p{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 550px){
+    .order_by_box {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.stor_slider {
+    display: flex;
+    /* transition: transform 0.5s ; */
+  }
+  
+  .stor_slid {
+    min-width: 100px; /* عرض هر اسلاید را تنظیم کنید */
+    transition: transform 0.7s ;
+  }
+  
+  .activ_info_stor_box {
+    /* استایل‌های خاص برای اسلاید فعال */
+    transform: scale(1.1); /* مثال: بزرگ‌تر کردن اسلاید فعال */
+  }
+  

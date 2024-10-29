@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stayle.css">
+    <link rel="stylesheet" href="loginpage_style.css">
+    <title>login</title>
+</head>
+<body>
+<!-- =========================================    -->
+<!-- =========================================    -->
+<!-- باکس اصلی -->
+    <div class="container">
+        <div class="form-wrapper">
+<!-- =========================================    -->
+<!-- =========================================    -->
+<!-- فرم لاگین  -->            
+            <form id="signInForm" class="form">
+                <div class="topform">
+                    <h1>ورود</h1>
+                    <p>کار</p>
+                    <span>نت</span>
+                </div>
+                <input type="email" placeholder="ایمیل" required>
+                <input type="password" placeholder="رمز عبور" required>
+                <button type="submit">ورود</button>
+                <p class="message">حساب کاربری ندارید؟ <a href="#" id="signUpLink">ثبت نام</a></p>
+                <p class="message"><a href="#" id="forgotPasswordLink">فراموشی رمز عبور</a></p>
+            </form>
+<!-- =========================================    -->
+<!-- =========================================    -->
+<!-- فرم ثبتنام -->            
+            <form id="signUpForm" class="form hidden">
+                <div class="topform">
+                    <h1>ثبت نام</h1>
+                    <p>کار</p>
+                    <span>نت</span>
+                </div>
+                
+                <input type="text" placeholder="نام کاربری" id="username" required>
+                <input type="email" placeholder="ایمیل" id="email" required>
+                <input type="password" placeholder="رمز عبور" id="password" required>
+                <input type="password" placeholder="تکرار رمز عبور" id="confirmPassword" required>
+                <div id="passwordStrength" class="strength-bar"></div>
+                <small id="passwordStrengthText"></small>
+                <button type="submit">ثبت نام</button>
+                <p class="message">حساب کاربری دارید؟ <a href="#" id="signInLink">ورود</a></p>
+            </form>
+<!-- =========================================    -->
+<!-- =========================================    -->
+<!-- فراموشی رمز عبور  -->            
+            <form id="forgotPasswordForm" class="form hidden">
+                <div class="topform  siform">    
+                    <p>کار</p>
+                    <span>نت</span>
+                </div>
+                <h1 class="titsf">فراموشی رمز عبور</h1>
+                <input type="email" placeholder="ایمیل" id="forgotPasswordEmail" required>
+                <button type="submit">ارسال</button>
+                <p class="message"><a href="#" id="backToSignInLink">بازگشت به ورود</a></p>
+            </form>
+<!-- =========================================    -->
+<!-- =========================================    -->
+<!-- رمز یک بار مصرف  -->            
+            <form id="otpForm" class="form hidden">
+                <div class="topform  siform">  
+                    <p>کار</p>
+                    <span>نت</span>
+                </div>
+                <h1 class="titsf">رمز عبور یک بار مصرف</h1>
+                <input type="text" placeholder="رمز عبور یک بار مصرف" id="otp" required>
+                <button type="button" id="nextToResetPassword">مرحله بعد</button>
+                <p class="message"><a href="#" id="backToForgotPasswordLink">بازگشت به ارسال ایمیل</a></p>
+            </form>
+<!-- =========================================    -->
+<!-- =========================================    -->
+<!-- ست کردن دوباره ی رمز  -->            
+            <form id="resetPasswordForm" class="form hidden">
+                <div class="topform  siform">  
+                    <p>کار</p>
+                    <span>نت</span>
+                </div>
+                <h1 class="titsf">تنظیم مجدد رمز عبور</h1>
+                <input type="password" placeholder="رمز عبور جدید" id="newPassword" required>
+                <input type="password" placeholder="تکرار رمز عبور جدید" id="confirmNewPassword" required>
+                <div id="newPasswordStrength" class="strength-bar"></div>
+                <small id="newPasswordStrengthText"></small>
+                <button type="submit">تنظیم مجدد رمز عبور</button>
+                <p class="message"><a href="#" id="backToOtpLink">بازگشت به مرحله قبل</a></p>
+            </form>
+        </div>
+    </div>
+<script src="login.js"></script>    
+</body>
+</html>

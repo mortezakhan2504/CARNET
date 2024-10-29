@@ -1,0 +1,1044 @@
+/* 
+=========================================   
+=========================================     
+بخش صفر کردن استایل های دیفالت
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+	-webkit-user-select: none; 
+	-moz-user-select: none; 
+	-ms-user-select: none; 
+	user-select: none; 
+  }
+  
+/* 
+=========================================   
+=========================================     
+بخش استایل دهی 
+*/
+img{
+    object-fit: cover !important; /* تصویر را متناسب با ابعاد ظرف برش می‌دهد */
+    object-position: center !important; /* مرکز تصویر را نمایش می‌دهد */
+}
+html{
+	overflow-x: hidden !important;
+}
+body{
+	direction: rtl;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	overflow-x: hidden !important;
+}
+/* 
+=========================================   
+=========================================     
+استایل های مربوط به هدر 
+*/
+header{
+	background-image: url('img/84cb3dcd240972c7ada2c06cc8faa665.jpg');
+	background-color: #1B1B1B;
+	background-size: cover;
+    background-position: center center;
+	box-sizing: border-box;
+	height: 100vh;
+	width: 100%;
+	/* overflow-x: hidden; */
+}
+.top_header{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 30px;
+}
+.login_box{
+	background-color: #FFB84B;
+	padding: 7px 20px;
+	border-radius: 30px;
+}
+.login_box nav {
+	display: flex;
+	align-items: center;
+}
+.login_box a{
+	text-decoration: none;
+	margin:0px 5px;
+	font-size: 18px;
+	color: black;
+}
+.login_box span {
+	color: black;
+	font-size: 18px;
+}
+/* 
+=========================================   
+=========================================     
+استتایل های منو هدر
+*/
+.menu_box ul{
+	display: flex;
+}
+.menu_box a{
+	position: relative;
+	text-decoration: none;
+	margin-left: 30px;
+	font-size: 18px;
+	color: white;
+	transition: color 0.5s ease;
+	padding-bottom: 10px;
+	
+}
+.menu_box a::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 2px;
+	background-color: #FFB84B;
+	transition: width 0.5s ease, left 0.5s ease;
+}
+.menu_box a:hover::after {
+	width: 100%;
+	left: 0;
+}
+.menu_box a:hover {
+	color: #FFB84B;
+}
+.activ_link{
+	color: #FFB84B !important; 
+}
+/* 
+=========================================   
+=========================================     
+بخش میانی هدر
+*/
+.mid_header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 170px;
+	width: 100%;
+	overflow: hidden;
+}
+.mid_header p {
+	color: white;
+	text-align:right;
+	font-size: 12px;
+	text-align: center;
+	line-height: 18px;
+}
+.mid_header h1{
+	color: white;
+	font-size: 42px;
+	margin-top: 10px;
+	text-align: center;
+}
+.yelloW_content{
+	display: flex;
+	align-items: flex-end;
+	width: 570px;
+}
+.yellow_text{
+	font-size: 16px !important;
+	color: #FFB84B !important;
+	width: 100% !important;
+}
+.logo_box_heder img{
+	width: 70px;
+}
+.header_description{
+	width: 570px;
+	margin-top: 20px;
+}
+.btn_box{
+	margin-top: 40px;
+}
+.btn_box nav{
+	display: flex;
+}
+.btn_box a{
+	text-decoration: none;
+	color: black;
+	padding: 12px 60px;
+	border-radius: 30px;
+	background-color: #FFB84B;
+	text-align: center;
+	margin: 5px;
+	position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease-in-out;
+	z-index: 0;
+}
+.btn_box a::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background-color: #ff9900;
+	transition: left 0.5s ease-in-out;
+	z-index: -1;
+}
+.btn_box a:hover::before {
+	left: 0;
+}
+
+.btn_box a:hover {
+	color: #fff;
+}
+/* 
+=========================================   
+=========================================     
+استایل های مربوط به مین 
+*/
+main {
+	background-color: #1B1B1B;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow: hidden;
+	padding-bottom: 90px;
+}
+.logo_box_main{
+	margin-top: 120px;
+}
+.logo_box_main img {
+	width: 70px;
+}
+.main_title{
+	color: white;
+	font-size: 36px;
+	margin-top: 30px;
+}
+/* 
+=========================================   
+=========================================     
+استایل های بخش امار ها
+*/
+.prj_info_box{
+	margin-top: 40px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.prj_info{
+	margin: 70px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.prj_number{
+	color: #FFB84B;
+	font-size: 32px;
+	font-weight: bolder;
+}
+.prj_title{
+	color: white;
+	font-size: 14px;
+	margin-top: 10px;
+	text-align: center;
+}
+/* 
+=========================================   
+=========================================     
+استایل های بخش نمایش رندوم ماشین های ثبت شده
+*/
+.rand_car_box{
+	display: flex;
+	flex-wrap: nowrap;
+	margin-top: 80px;
+	align-items: center;
+	
+}
+.car_box{
+	margin: 10px;
+	position: relative;
+	
+	
+}
+.car_box img{
+	width: 400px;
+	border-radius: 30px;
+	z-index: 1;
+	
+	
+	
+}
+.action_img{
+	width: 500px !important;
+	
+}
+.none_info{
+	display: none !important;
+}
+.car_box_info{
+	background-color: #222222;
+	z-index: 999;
+	border-radius: 20px;
+	width: 420px;
+	margin-right: 20px;
+	margin-top: -30px;
+	position: absolute;	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+}
+.info{
+	display: flex;
+	flex-direction: column;
+}
+.description_car_info{
+	display: flex;
+}
+.btn_dicp_info{
+	display: flex;
+	align-items: center;
+	
+}
+.title_car h1{
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+}
+.description_car_info p {
+	font-size: 10px;
+	color: #AFAFAF;
+	margin-left: 7px;
+}
+.prise_car p {
+	color: white;
+	font-size: 12px;
+	font-weight: bold;
+	margin-left: 5px;
+}
+.btn_info_box a {
+	color: black;
+	background-color: #FFB84B;
+	text-decoration: none;
+	padding: 5px 20px;
+	border-radius: 20px;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	position: relative;
+	overflow: hidden;
+	transition: color 0.3s ease-in-out;
+	z-index: 1;
+	display: inline-block;
+}
+.btn_info_box a::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background-color: #ff9900;
+	transition: left 0.5s ease-in-out;
+	z-index: -1;
+}
+.btn_info_box a:hover::before {
+	left: 0;
+}
+.btn_info_box a:hover {
+	color: #fff;
+}
+.description_car_info{
+	display: flex;
+	align-items: center;
+	margin-top: 15px;
+}
+.description_car_info div{
+	display: flex;
+	align-items: center;
+}
+.description_car_info svg {
+	color: #FFB84B;
+	margin-left: 4px;
+	margin-right: 0;
+}
+.btn_scorol_r{
+	color: #FFB84B;
+	cursor: pointer;
+	float: right;
+}
+.btn_scorol_l{
+	color: #FFB84B;
+	cursor: pointer;
+}
+/* 
+=========================================   
+=========================================     
+لاین 
+*/
+.line{
+	margin-top: 120px;
+	width: 3px;
+	height: 70px;
+	background-color: #FFB84B;
+	border-radius: 10px;
+}
+/* 
+=========================================   
+=========================================     
+استایل های بخش درباره ما
+*/
+.team_info{
+	background-image: url('img/05.jpg');
+	background-size: cover;
+    background-position: center center;
+	width: 100%;
+	height: 110vh;
+	margin-top: 70px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.title_team_info{
+	display: flex;
+	margin-top: 60px;
+}
+.title_team_info p {
+	color: white;
+	font-size: 42px;
+	margin-left: 7px;
+}
+.title_team_info span{
+	color: #FFB84B;
+	font-size: 42px;
+	margin-left: 7px;
+
+}
+.b_box{
+	display: flex;
+	width: 80%;
+	margin-top: 120px;
+}
+.description_team_info{
+	width: 70%;
+	margin-left: 150px;
+}
+.description_team_info h1{
+	color: #FFB84B;
+	font-size: 20px;
+}
+.description_team_info p {
+	color: white;
+	text-align: justify;
+	margin-top: 30px;
+	line-height: 20px;
+	font-size: 14px;
+}
+/* 
+=========================================   
+=========================================     
+اسلاید اعضای گروه
+*/
+.person_box {
+	position: relative;
+}
+.person {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	transition: all 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.person img {
+	width: 130px;
+	border-radius: 20px;
+	opacity: 40%;
+	transition: all 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+	transform: scale(0.8);
+}
+.person_name p, .person_description p {
+	color: white;
+	font-size: 12px;
+	margin-top: 20px;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}
+.person_description p {
+	color: #FFB84B;
+	font-size: 10px;
+	margin-top: 5px;
+}
+.person_none {
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+}
+.r_person {
+	right: -55px;
+	opacity: 0.4;
+}
+.l_person {
+	right: 75px;
+	opacity: 0.4;
+}
+.c_person {
+	z-index: 999;
+	top: -15px;
+	opacity: 1;
+	transform: scale(1);
+}
+.c_person img {
+	width: 150px !important;
+	opacity: 100% !important;
+	transform: scale(1.1);
+}
+.c_person .person_name p, .c_person .person_description p {
+	opacity: 1;
+}
+/* 
+=========================================   
+=========================================     
+بخش اطلاعات تماس و جیمیل
+*/
+.cont_info {
+	display: flex;
+	margin-top: 120px;
+	flex-wrap: wrap;
+}
+.item_info{
+	display: flex;
+	align-items: center;
+	margin: 10px;
+}
+.item_info svg {
+	color: black;
+}
+.svg_info{
+	border-radius: 100%;
+	background-color: #FFB84B;
+	border: 1px solid #FFB84B;
+	padding: 12px;
+}
+.item_info h1 {
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+	margin: 0 ;
+}
+.item_info p {
+	font-size: 12px;
+	color: #D8D8D8;
+	margin-top:2px ;
+	margin-left: 50px;
+}
+.item_info div {
+	margin-left: 15px !important;
+}
+/* 
+=========================================   
+=========================================     
+استایل فرم مین 
+*/
+#cuntus_main{
+	margin-top: 50px;
+	display: none !important;
+}
+/* 
+=========================================   
+=========================================     
+استایل های بخش فوتر
+*/
+footer{
+	background-color: black;
+	height: 250px;
+}
+footer svg{
+	color: white;
+	margin: 5px;
+}
+.footer_box{
+	display: flex;
+	padding-top: 40px;
+	width: 100% !important;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.tit_foter{
+	display: flex;
+}
+.tit_foter p{
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+}
+.tit_foter span{
+	color: #FFB84B;
+	font-size: 20px;
+	font-weight: bold;
+}
+.tit_desk_foter p{
+	color: white;
+	font-size: 12px;
+	font-weight: normal !important;
+	width: 170px;
+	text-align: justify;
+	margin-top: 15px;
+	line-height: 15px;
+}
+.social_media {
+	display: flex;
+	margin-top: 20px;
+}
+.social_media nav{
+	border: 2px solid #FFB84B;
+	border-radius: 100%;
+	padding: 3px;
+	margin-left: 15px;
+} 
+.social_media nav:hover {
+	background-color: #FFB84B;	
+	transition-duration: 1000ms;
+	svg{
+		color: black;
+	};
+}
+.menu_footer{
+	margin-top: 15px;
+}
+.menu_footer a{
+	text-decoration: none;
+	color: white;
+	font-size: 14px;
+}
+.menu_footer a:hover{
+	color: #FFB84B;
+	transition-duration: 500ms;
+}
+.menu_footer li {
+	margin-top: 5px;
+}
+.menu_footer ul {
+	list-style:inside;
+	color: #FFB84B;
+}
+.tit_cuntus_footer p {
+	color: white;
+	font-size: 20px;
+}
+.dic_cuntus_footer p {
+	color: white;
+	font-size: 12px;
+	margin-top: 15px;
+	width: 250px;
+	text-align: justify;
+	line-height: 15px;
+}
+.cuntus_box_footer{
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+}
+.cuntus_box_footer input {
+	border: 2px solid #FFB84B;
+	border-radius: 20px;
+	background-color: black;
+	color: white;
+	padding: 10px 10px;
+}
+.cuntus_box_footer input:focus{
+	outline: none;
+
+}
+.cuntus_box_footer button {
+	border-radius: 100%;
+	background-color: #FFB84B;
+}
+.cuntus_box_footer svg {
+	color: black;
+}
+.sub_footer{
+	position: relative;
+}
+.sub_footer input{
+	position: absolute;
+	width: 230px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.sub_footer button {
+	position: absolute;
+	left: 0 ;
+	margin-top: 10px;
+	top: 4px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+/* 
+=========================================   
+=========================================     
+بخش کپی رایت
+*/
+.copyR_footer p{
+	color: white;
+	margin: auto;
+	margin-top: 20px;
+	width: 69%;
+}
+/* 
+=========================================   
+=========================================     
+استایل های بخش منو همبرگری
+*/
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 10px;
+  left: -30px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+#menuToggle a
+{
+  text-decoration: none;
+  color: white;
+  
+  transition: color 0.3s ease;
+}
+#menu{
+    border-left: 2px solid #cdcdcd6f;
+}
+#menuToggle a:hover
+{
+  color: #FFB84B;
+}
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0; 
+  z-index: 2; 
+  -webkit-touch-callout: none;
+}
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: white;
+}
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+#menu
+{
+  position: absolute;
+  left: -140px;
+  width: 200px;
+  height: 700px;
+  margin: -100px 0 0 -50px;
+  padding: 15px;
+  padding-right: 50px;
+  padding-top: 125px;
+  padding-bottom: 50px;
+  border-radius: 0px 0px 0px 20px;
+  background: #1B1B1B;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;  
+  transform-origin: 0% 0%;
+  transform: translate(135%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+.menu_mobile_login 
+{
+	width: 200px;
+	height: 35px;
+	background-color: #FFB84B;
+	border-radius: 3px;
+
+}
+.menu_mobile_login nav{
+	display: flex;
+	align-items: center;
+}
+.menu_mobile_login svg{
+	margin: 6px 4px 0px 1px;
+}
+.menu_mobile_login a {
+	margin:0px 3px 0px 3px ;
+	color: black !important;
+}
+.menu_mobile_login a:hover{
+	color: white !important;
+}
+#menu li
+{
+  padding: 10px 0;
+  font-size: 14px;
+  border-bottom: 2px solid #cdcdcd6f;
+}
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+.mobile_menu
+{
+	display: none;
+}
+/* 
+=========================================   
+=========================================     
+استایل بخشی از هاور ها
+*/
+.login_box a:hover {
+	color: white;
+	transition-duration: 500ms;
+}
+/* 
+=========================================   
+=========================================     
+استایل های بیلبیلک
+*/
+#back-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: #FFB84B;
+	color: #fff;
+	padding: 10px 10px;
+	border-radius: 100%;
+	display: none;
+	cursor: pointer;
+	z-index: 9999;
+}
+
+#back-to-top:hover {
+	background-color: #ff9900;
+}
+/* 
+=========================================   
+=========================================     
+استایل های بخش ریسپانسیو
+*/
+@media only screen and (max-width: 450px){
+	.person_box{
+		display: none !important;
+	}
+	.cuntus_footer{
+		
+		display: none;
+	}
+	.mid_header h1 {
+		font-size: 24px;
+	}
+	.header_description {
+		width: 100%;
+
+	}
+	.main_title{
+		font-size: 24px;
+	}
+	.description_team_info{
+		width: 100%;
+		margin-left: 0;
+	}
+	.description_team_info p {
+		width: 100%;
+	}
+	.description_team_info h1{
+		width: 100%;
+	}
+	#cuntus_main{
+		display: block !important;
+	}
+	.sub_footer button {
+		left: 5px;
+		top: 9px;
+	}
+} 
+@media only screen and (max-width: 600px){
+	#cuntus_main{
+		display: block !important;
+	}
+	.sub_footer button {
+		left: 5px;
+		top: 9px;
+	}
+	.cuntus_footer{
+		
+		display: none;
+	}
+
+}
+@media only screen and (max-width: 750px) {
+	.login_box{
+		display: none;
+	}
+	.menu_box{
+		display: none;
+		
+	}
+	.mobile_menu{
+		display: block;
+	}
+	.logo_box_heder{
+		margin-left: 30px;
+		margin-top: 2px;
+	}
+	.top_header{
+		justify-content: space-between;
+	}
+}
+@media only screen and (max-width: 1080px){
+	.person_box{
+		display: none !important;
+	}
+	.description_team_info{
+		width: 100%;
+		margin-left: 0;
+	}
+	.b_box{
+		flex-direction: column;
+		align-items: center;
+	}
+	.copyR_footer p{
+		width: 85%;
+	}
+	
+}
+@media only screen and (max-width: 1120px){
+	.rand_car_box{
+		flex-direction: column;
+	}
+	.btn_scorol_r{
+		transform: rotate(-90deg);
+	}
+	.btn_scorol_l{
+		transform: rotate(-90deg);
+	}
+}
+@media only screen and (max-width: 1440px){
+	.car_box img {
+		width: 300px;
+	}
+	.action_img {
+		width: 400px !important;
+	}
+	.car_box_info{
+		margin-right: -27px;
+    	margin-top: -10px;
+	}
+}
+@media only screen and (max-width: 1120px){
+	.car_box img {
+		width: 250px;
+	}
+	.action_img {
+		width: 350px !important;
+	}
+
+	.car_box_info{
+		margin-right: 0px;
+		margin-top: -110px;
+		width: 310px;
+		flex-wrap: wrap;
+		display: none;
+	}
+	.btn_dicp_info{
+		margin-top: 20px;
+	}
+	.car_box:hover{
+		.car_box_info{
+			display: block;
+			opacity: 90%;
+		}
+	}
+
+}
+@media only screen and (max-height: 750px){
+	.cont_info{
+		margin-top: 10px;
+	}
+}
+
+
+
+
+
+
+
